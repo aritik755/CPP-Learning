@@ -1,0 +1,27 @@
+#include<iostream>
+#include<vector>
+using namespace std;
+int main(){
+
+  vector<int> v(6);
+  cout<<"Enter the values of vector: ";
+  for(int i = 0; i < 6; i++){
+    cin>>v[i];
+  }
+  
+  int x;
+  cout<<"Enter the value of occurance number: ";
+  cin>>x;
+
+  int occurance = 0;
+
+  for(int ele:v){
+    if(ele==x){
+      occurance++;
+    }
+  }
+
+  cout<<"Number of occurance of given number: "<<occurance<<endl;
+  
+  return 0;
+}  
