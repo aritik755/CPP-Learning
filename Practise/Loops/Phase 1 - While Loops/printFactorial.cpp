@@ -2,14 +2,14 @@
 using namespace std;
 int main(){
 
-  int n;
-  cout<<"Enter the value of n: ";
-  cin>>n;
+  int r;
+  cout<<"Enter the value of r: ";
+  cin>>r;
 
   int factorial = 1;
   int i = 1;
   cout<<"Factorial of given input: ";
-  while(i <= n){
+  while(i <= r){
   factorial *= i;
   i++;
   }
