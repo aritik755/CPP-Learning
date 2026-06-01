@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 
   int digit;
-  cout<<"Enter the digit: ";
+  cout<<"Enter the number: ";
   cin>>digit;
 
   int multiplication = 1;
