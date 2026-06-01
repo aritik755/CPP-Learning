@@ -3,7 +3,7 @@ using namespace std;
 int main(){
 
   int digit;
-  cout<<"Enter the number: ";
+  cout<<"Enter a number: ";
   cin>>digit;
 
   int count = 0;
