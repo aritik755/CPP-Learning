@@ -17,10 +17,10 @@ int main(){
   cout<<reversedDigit<<endl;
   
   if(originalDigit == reversedDigit){
-    cout<<"The given number is palindrome."<<endl;
+    cout<<"The given number is Palindrome."<<endl;
   }
   else{
-    cout<<"The given number is not palindrome."<<endl;
+    cout<<"The given number is not Palindrome."<<endl;
   }
 
   return 0;
