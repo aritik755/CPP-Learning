@@ -24,10 +24,10 @@ int main(){
   }
 
   if(sum == originalNumber){
-    cout<<"The given number is a armstrong number."<<endl;
+    cout<<"The given number is a Armstrong Number."<<endl;
   }
   else{
-    cout<<"The given number is not a armstrong number."<<endl;
+    cout<<"The given number is not a Armstrong Number."<<endl;
   }
 
   return 0;
