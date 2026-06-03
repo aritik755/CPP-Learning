@@ -11,7 +11,7 @@ int main(){
   int b = 1;
   cout<<"Fibonacci Series upto given terms: ";
   cout<<a<<" "<<b<<" ";
-  while(i < n){
+  while(i < n-2){
     
     int next = a + b;
     a = b;
