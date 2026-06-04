@@ -2,12 +2,12 @@
 using namespace std;
 int main(){
 
-  int n;
+  int m;
   cout<<"Enter the number of terms: ";
-  cin>>n;
+  cin>>m;
 
   int sum = 0;
-  for(int i = 1; i <=n; i++){
+  for(int i = 1; i <= m; i++){
     int cube = i*i*i;
     sum += cube;
   }
