@@ -1,4 +1,4 @@
-// 6. Find the sum of Odd elements only.
+// 7. Find the sum of Odd elements only.
 #include<iostream>
 using namespace std;
 int main(){
