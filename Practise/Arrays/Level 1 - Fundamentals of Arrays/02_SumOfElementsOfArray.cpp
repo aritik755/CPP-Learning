@@ -1,4 +1,4 @@
-// 1. Input n and take n integers into an array; print them.
+// 2. Find the sum of all elements in an array.
 #include<iostream>
 using namespace std;
 int main(){
