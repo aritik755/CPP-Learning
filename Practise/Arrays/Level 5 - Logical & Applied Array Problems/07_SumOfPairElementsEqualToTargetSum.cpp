@@ -10,13 +10,16 @@ int main(){
   cout<<"Enter the target value: ";
   cin>>k;
 
+  int count = 0;
   for(int i = 0; i < n; i++){
     for(int j = i+1; j < n; j++){
       if(array[i] + array[j] == k){
-        cout<<"("<<array[i]<<","<<array[j]<<")";
+        cout<<"("<<array[i]<<","<<array[j]<<")"<<endl;
+        count++;
       }
     }
   }
 
+  cout<<"Number of pairs whose sum are equal to target element: "<<count<<endl;
   return 0;
 }
