@@ -1,0 +1,19 @@
+-->Linked lists are linear data structure used to store list of values.
+--> These are memory blocks linked to each other
+
+# Advantages of Linked List over Array:- 
+1. Dynamic memory allocation(can be resized at run-time)
+2. Non-contigous memory allocation.
+3. Insertion and deletion is non expensive.
+
+# Listnode:-
+--> These are blocks of memory -> node
+
+-> It has two parts:- Data and Next Pointer
+-> This next pointer points to the next linked list address.
+-> First node is the head of the linked list and last node that contains null in its next pointer is called the tail node.
+
+# Types of Linked Lists:- 
+1. Singly Linked List(Linked List) :- Every node points to its successor/next node.
+2. Doubly Linked List :- Every node is connected to its next and previous node.
+3. Circular Linked List :- The last node points to the head/first node. 
