@@ -1,132 +1,153 @@
-// Insertion of node at kth position
-#include<iostream>
+#include <iostream>
 using namespace std;
 
-class Node{
+class Node
+{
 public:
-
   int val;
-  Node* next; // Address of next node
+  Node *next;
 
-  Node(int data){
+  Node(int data)
+  {
     val = data;
     next = NULL;
   }
-
 };
 
-void insertionAtHead(Node* &head, int val){
-  Node* new_node = new Node(val);
-  new_node->next = head;
-  head = new_node;
+void insertAtHead(Node *&head, int val)
+{
+  Node *new_Node = new Node(val);
+  new_Node->next = head;
+  head = new_Node;
 }
 
-void insertionAtTail(Node* &head, int val){
-  Node * new_node = new Node(val);
+void insertAtTail(Node *&head, int val)
+{
+  Node *new_Node = new Node(val);
 
-  Node* temp = head;
-  while(temp->next != NULL){
-    temp= temp->next;
+  Node *temp = head;
+  while (temp->next != NULL)
+  {
+    temp = temp->next;
   }
-
-  temp->next = new_node;
+  temp->next = new_Node;
 }
 
-void insertionAtPosition(Node* &head, int val, int pos){
-  if(pos == 0){
-    insertionAtHead(head, val);
+void insertAtPosition(Node *&head, int val, int pos)
+{
+  if (pos == 0)
+  {
+    insertAtHead(head, val);
     return;
   }
 
-  Node* new_node = new Node(val);
-  Node* temp = head;
-  int current_pos = 0;
-  while(current_pos != pos - 1){
-    temp = temp -> next;
-    current_pos++;
+  Node *new_Node = new Node(val);
+  int currentPosition = 0;
+  Node *temp = head;
+  while (currentPosition != pos - 1)
+  {
+    temp = temp->next;
+    currentPosition++;
   }
-
-  // temp is pointing to node at pos-1
-  new_node->next = temp->next;
-  temp->next = new_node;
+  new_Node->next = temp->next;
+  temp->next = new_Node;
 }
 
-void updateAtPosition(Node* &head, int k, int val){
-  Node* temp = head;
-  int current_pos = 0;
-   
-  while(current_pos != k){
+void updateAtPosition(Node *&head, int val, int k)
+{
+  Node *temp = head;
+  int currentPosition = 0;
+  while (currentPosition != k)
+  {
     temp = temp->next;
-    current_pos++;
+    currentPosition++;
   }
-
-  //temp will be pointing to kth node
   temp->val = val;
 }
 
-void deleteAtHead(Node* &head){
-  Node* temp = head; // node to be deleted
-  head = head-> next;
+void deleteAtHead(Node *&head)
+{
+  Node *temp = head;
+  head = head->next;
   free(temp);
 }
 
-void display(Node* head){
-  Node* temp = head;
-  while(temp != NULL){
-    cout<<temp->val<<"->";
-    temp = temp->next;
+void deleteAtTail(Node *&head)
+{
+  Node *secondLast = head;
+  while (secondLast->next->next != NULL)
+  {
+    secondLast = secondLast->next;
   }
-  cout<<"NULL"<<endl;
-}
-
-void deleteAtTail(Node* &head){
-  Node* second_last = head;
-  while(second_last->next->next != NULL){
-    second_last = second_last->next;
-  }
-
-  // now second_last points to second last node
-  Node* temp = second_last->next; // node to be deleted
-  second_last->next = NULL;
+  Node *temp = secondLast->next;
+  secondLast->next = NULL;
   free(temp);
 }
 
-void deleteAtPosition(Node* head, int pos){
+void deletionAtPosition(Node* &head, int pos){
   if(pos == 0){
     deleteAtHead(head);
     return;
   }
-
-  int current_pos = 0;
+  
   Node* prev = head;
-  while(current_pos != pos-1){
+  int currentPosition = 0;
+  while(currentPosition != pos-1){
     prev = prev->next;
-    current_pos++;
+    currentPosition++;
   }
-
-  //prev is pointing to node at pos - 1
-  Node* temp = prev->next; // node to be deleted
   prev->next = prev->next->next;
+  Node* temp = prev->next;
   free(temp);
-}
-int main(){
 
-  Node* head = NULL;
-  insertionAtHead(head, 2);
+}
+
+void display(Node *head)
+{
+  Node *temp = head;
+  while (temp != NULL)
+  {
+    cout << temp->val << "->";
+    temp = temp->next;
+  }
+  cout << "NULL" << endl;
+}
+
+int main()
+{
+
+  Node *head = NULL;
+  insertAtHead(head, 8);
   display(head);
-  insertionAtHead(head, 1);
+  insertAtHead(head, 7);
   display(head);
-  insertionAtTail(head,3);
+  insertAtHead(head, 6);
   display(head);
-  insertionAtPosition(head,4,1);
+  insertAtHead(head, 5);
   display(head);
-  updateAtPosition(head,2,5);
+
+  insertAtTail(head, 1);
   display(head);
+  insertAtTail(head, 2);
+  display(head);
+  insertAtTail(head, 3);
+  display(head);
+  insertAtTail(head, 4);
+  display(head);
+
+  insertAtPosition(head, 9, 4);
+  display(head);
+
+  updateAtPosition(head, 10, 5);
+  display(head);
+
   deleteAtHead(head);
   display(head);
+
   deleteAtTail(head);
   display(head);
-  deleteAtPosition(head, 1);
+
+  deletionAtPosition(head, 2);
   display(head);
 
   return 0;
