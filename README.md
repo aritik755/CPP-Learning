@@ -15,12 +15,12 @@ A collection of C++ programs, notes, and mini projects created while learning C+
 - Functions
 - Arrays & Strings
 - Pointers
+- Recursion
+- Time and Space Complexity
 - Structures
 - Object-Oriented Programming (OOP)
-- File Handling
-- Standard Template Library (STL)
+- Linked List
 - Problem Solving
-- Mini Projects
 
 ---
 
