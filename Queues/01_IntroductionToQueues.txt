@@ -1,0 +1,17 @@
+# Introduction to Queues:-
+-> Queue is a data structure follow FIFO(First in First Out)/FCFS(First Come First Serve) principle.
+-> Queue is a linear data structure.
+
+# Types of operations in Queue:-
+1. Enqueue :- Operation to add a new element in the Queue.
+2. Dequeue :- Operation to remove a new element in the Queue.
+3. isFull :- Operation to check if a queue is full.
+4. isEmpty :- Operation to check the queue is empty.
+5. Front :- Operation gives us the element that came first.
+6. Size :- Operation to determine the size of Queue.
+
+# Types of Queues:-
+1. Simple Queue :- An Queue having front and back/rear when an element is added is goes from back to front.(Added from back and removed from front)
+2. Priority Queue :- To arrange data according to priority in the queue.
+3. Circular Queue :- When front and back/rear are connected in a circle is called Circular Queue.(Rear will exist after the front)
+4. Double Ended Queue/Deque :- In this queue we can also add from front and remove from back.
