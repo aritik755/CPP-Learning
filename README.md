@@ -20,6 +20,8 @@ A collection of C++ programs, notes, and mini projects created while learning C+
 - Structures
 - Object-Oriented Programming (OOP)
 - Linked List
+- Stacks
+- Queues
 - Problem Solving
 
 ---
