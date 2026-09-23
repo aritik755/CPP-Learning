@@ -1,0 +1,15 @@
+--> Set is a STL container used to store unqiue values.
+--> Set stores values in ordered state(increasing/decreasing order).
+--> No indexing elements are identified by their own values.
+--> Once value is inserted in a set, it cannot be modified.
+--> It uses dynamic memory allocation.
+--> By default values are stored in increasing order.
+
+## Declaration of set:-
+Header File --> #include<set>
+Declaration --> set<data_type> set_name;
+Initialization --> set<int> set1 = {1,2,3,4} (By default values are stored in increasing order.)
+
+For storing the data in decreasing order:-
+set<datatype, greater<datatype>> set_name;
+
