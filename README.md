@@ -22,6 +22,7 @@ A collection of C++ programs, notes, and mini projects created while learning C+
 - Linked List
 - Stacks
 - Queues
+- Sets
 - Problem Solving
 
 ---
