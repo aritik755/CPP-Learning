@@ -23,6 +23,7 @@ A collection of C++ programs, notes, and mini projects created while learning C+
 - Stacks
 - Queues
 - Sets
+- Hashing
 - Problem Solving
 
 ---
