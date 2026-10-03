@@ -24,6 +24,7 @@ A collection of C++ programs, notes, and mini projects created while learning C+
 - Queues
 - Sets
 - Hashing
+- Hashmap
 - Problem Solving
 
 ---
