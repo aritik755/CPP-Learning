@@ -96,10 +96,9 @@ void deletionAtPosition(Node* &head, int pos){
     prev = prev->next;
     currentPosition++;
   }
-  prev->next = prev->next->next;
   Node* temp = prev->next;
+  prev->next = prev->next->next;
   free(temp);
-
 }
 
 void display(Node *head)
