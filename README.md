@@ -26,6 +26,7 @@ A collection of C++ programs, notes, and mini projects created while learning C+
 - Hashing
 - Hashmap
 - Trees
+- BST(Binary Search Tree)
 - Problem Solving
 
 ---
